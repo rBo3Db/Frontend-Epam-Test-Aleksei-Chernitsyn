@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Aleksei Chernitsyn </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <select autofocus onchange="sortWithDirection(event)">
+        <option selected value="abc">алфавитная сортировка</option>
+        <option value="reverse">обратная сортировка</option>
+      </select>
+      <h1>Список людей</h1>
+      <div id="personList" onclick="listItemClicked(event)">
+      </div>
+      <div id="shadowOfPopup">
+        <div id="popup">
+          <div class="popup-header">
+            <span onclick="closePopup()">╳</span>
+          </div>
+          <div id="popupFullText">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"> </script>
+</body>
+</html> 
